@@ -1,0 +1,223 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{mathptmx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\[-2pt]
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Sahas Goli} \\ \vspace{1pt}
+    \small +1 (408) 797-7244 $|$ \href{mailto:sg2636@cornell.edu}{\underline{sg2636@cornell.edu}} $|$ San Francisco, CA, USA $|$
+    \href{https://linkedin.com/in/sahasgoli}{\underline{linkedin.com/in/sahasgoli}} $|$
+    \href{https://github.com/Sahas266}{\underline{github.com/Sahas266}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cornell University -- College of Engineering}{Aug. 2025 -- May 2028}
+      {Bachelor of Science, Computer Science \& Applied Math}{GPA: 4.0}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Pensieve.co}{June 2025 -- August 2025}
+      {Software \& AI Intern}{San Francisco, CA, USA}
+      \resumeItemListStart
+        \resumeItem{Built an AI grading system to automate classroom scoring, reducing instructor workload and standardizing feedback.}
+        \resumeItem{Fine-tuned foundational models against instructor evaluations, achieving 95\% scoring alignment and boosting trust in automations.}
+        \resumeItem{Extracted and processed classroom datasets to create structured training data, accelerating AI model development.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of California -- San Diego}{January 2025 -- June 2025}
+      {Data Specialist}{La Jolla, San Diego, CA, USA}
+      \resumeItemListStart
+        \resumeItem{Researched the yield differential between green and conventional bonds, delivering a detailed comparative analysis framework.}
+        \resumeItem{Retrieved fixed-income data via Bloomberg Terminal and constructed custom US corporate bond indices for market benchmarking.}
+        \resumeItem{Built a data-gathering and filtering methodology for green bond identification, ensuring compatibility with econometric models.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IBM}{June 2023 -- August 2024}
+      {Software Intern}{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed JAX-RS APIs to replace slow retrieval calls, accelerating access by 30\% for Cognitive Telescope Network researchers.}
+        \resumeItem{Implemented image-generation algorithms to address low-resolution telescope outputs, boosting clarity for research analysis.}
+        \resumeItem{Optimized API functionality with the engineering team to resolve reliability issues and increase uptime for real-time workflows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Thermo Fisher Scientific}{March 2022 -- August 2023}
+      {Software Intern}{Pleasanton, CA, USA}
+      \resumeItemListStart
+        \resumeItem{Overhauled genome libraries misaligned with updated NCBI databases and DNA-sequencing guidelines to meet current standards.}
+        \resumeItem{Collaborated with cross-functional teams to tackle high error rates in microbe identification, reducing data errors by 15\%.}
+        \resumeItem{Integrated new sequencing guidelines into microbial genome pipelines, ensuring compliance with latest genomic standards.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects \& Outside Experience}
+    \resumeSubHeadingListStart
+
+      \resumeSubheading
+        {Cornell Blockchain}{October 2025 -- Present}
+        {Investments Team}{Ithaca, NY, USA}
+        \resumeItemListStart
+          \resumeItem{Won 1st Place at Penn Blockchain Conference Hackathon 2026 for Phantom Pool, a privacy-preserving prediction-market dark pool with off-chain price-time matching, iceberg execution, cross-chain settlement (Polygon/Solana/TRON), and AI news-signal routing.}
+          \resumeItem{Developed a causal inference model integrating alternative data and NLP sentiment analysis to optimize quantitative crypto strategies.}
+          \resumeItem{Contributed to DormDAO's off-chain stack on Base L2, building strategy engines and trade intent for spot, perp, and options routing.}
+          \resumeItem{Built guardrail simulations and monitoring to enforce risk limits and deliver institutional-grade custody for university trading vaults.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Student Foundation Investment Committee UCSD}{September 2024 -- June 2025}
+        {TMT Analyst, Quantitative Analyst}{San Diego, CA, USA}
+        \resumeItemListStart
+          \resumeItem{Helped manage a \$1.3M+ endowment portfolio, ensuring 100\% of returns funded UCSD student scholarships.}
+          \resumeItem{Conducted DCF model-driven equity research via Bloomberg Terminal to pinpoint undervalued stocks for fund investment.}
+          \resumeItem{Conducted risk parity analysis to advise a more balanced industry risk profile and presented pitch decks to portfolio managers.}
+          \resumeItem{Built an Analyst Hub with web scrapers, LLMs, and SMTP news alerts, streamlining research for asset management teams.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Sustainable Investment Group at UC San Diego}{September 2024 -- June 2025}
+        {Quantitative Analyst}{San Diego, CA, USA}
+        \resumeItemListStart
+          \resumeItem{Applied linear regression, ARIMA, GARCH models to fundamentals and ESG metrics, informing sustainable investment decisions.}
+          \resumeItem{Automated DCF valuation with an Excel VBA model using LSEG, cutting manual processing time and errors for equity research.}
+          \resumeItem{Developed an adaptive pairs trading crypto strategy using deep Q-Learning, HMMs, and Bayesian inference.}
+          \resumeItem{Represented UCSD at UCLA DataFest with a multi-factor vector autoregression model improving leasing forecast accuracy.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {Triton Quantitative Trading}{September 2024 -- June 2025}
+        {Competition Team, Board Member}{La Jolla, San Diego, CA, USA}
+        \resumeItemListStart
+          \resumeItem{Solved time-limited Fermi-style estimation problems in the Jane Street San Diego Estimathon, earning first place.}
+          \resumeItem{Developed a momentum-based mega-cap equity strategy with Monte Carlo optimization, winning Open-Quant League 2025 Q1.}
+          \resumeItem{Sharpened trading skills by competing in IMC Prosperity, Quant League, and BRAIN competitions, deepening strategic expertise.}
+          \resumeItem{Organized and hosted seminars on risk management, options, and pricing strategies, equipping teammates with advanced insights.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Additional Information}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Skills}{: Java, Python, C/C++, OOP, DSA, NumPy, Pandas, Data Science, Financial Modeling, Business Analytics, Excel/Sheets} \\
+     \textbf{Achievements}{: USA Computing Olympiad Gold Medalist, AIME Qualifier} \\
+     \textbf{Languages}{: Spanish, Telugu, English}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
