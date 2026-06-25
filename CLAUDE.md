@@ -38,10 +38,7 @@ Every bullet must take as **few lines as possible** and **fill as much of each l
 
 "Lines" are determined by actual PDF wrapping — verify via `pdftotext`, and for borderline cases render `preview-1.png` and inspect visually.
 
-Most bullets should fit on exactly **one line**. Only these two bullets may span **two full lines**:
-
-- Cornell Blockchain: Phantom Pool bullet
-- Cornell Blockchain: Rust causal-inference engine bullet
+Most bullets should fit on exactly **one line**.
 
 ## Editing bullets
 
