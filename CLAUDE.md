@@ -7,6 +7,14 @@ Rules for working on `Sahas_Goli_Resume.tex` (and the rendered PDF).
 - `Sahas_Goli_Resume.tex` is the authoritative resume. Edit the `.tex`, rebuild, and commit both `.tex` and `.pdf`.
 - There is no `.md` counterpart anymore — do not recreate one.
 - The repo is served as GitHub Pages from `sahas266.github.io`. `index.html` embeds the PDF and should not be modified casually.
+- `private/archive.md` is a gitignored overflow store: bullets cut from the resume, roles that never fit, and details lost in condensing. When trimming content, move it there instead of deleting it. It holds only what is *not* on the resume — never duplicate live bullets into it.
+
+## Private content
+
+This repo is public and served over HTTP. `private/` is gitignored and must stay that way.
+
+- Never `git add` anything under `private/`, never quote its contents into a commit message, the `.tex`, or `index.html`.
+- Anything committed here is public permanently, even if later deleted.
 
 ## Build and verify workflow
 
