@@ -6,3 +6,4 @@
 *.synctex.gz
 preview-*.png
 .claude/
+private/
